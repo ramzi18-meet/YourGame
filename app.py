@@ -7,3 +7,10 @@ def index():
     
 if __name__ == "__main__":
     app.run()
+
+@app.route('/upcoming')
+def index():
+    return app.send_static_file('upcoming.html')
+    
+if __name__ == "__main__":
+    app.run()
