@@ -15,7 +15,7 @@ def upcoming():
 if __name__ == "__main__":
     app.run()
 
-@app.route('/upcoming')
+@app.route('/contact')
 def contact():
     return app.send_static_file('contact.html')
     
