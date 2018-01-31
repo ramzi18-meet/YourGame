@@ -8,6 +8,10 @@ def home():
 if __name__ == "__main__":
     app.run()
 
+
+
+
+
 @app.route('/upcoming')
 def upcoming():
     return app.send_static_file('upcoming.html')
@@ -15,12 +19,19 @@ def upcoming():
 if __name__ == "__main__":
     app.run()
 
+
+
+
+
+
 @app.route('/contact')
 def contact():
     return app.send_static_file('contact.html')
     
 if __name__ == "__main__":
     app.run()
+
+
 
 
 @app.route('/about')
