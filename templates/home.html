@@ -83,7 +83,7 @@ img {vertical-align: middle;}
 </head>
 <body background="/static/back.jpg">
 <ul>
-  <li><a href="home">Home</a></li>
+  <li><a href="/home">Home</a></li>
   <li><a href="/upcoming">Upcoming</a></li>
   <li><a href="/contact">Contact Us</a></li>
   <li><a href="/about">About</a></li>
@@ -174,7 +174,7 @@ function showSlides() {
 
 
 
-<form action="{{ url_for('submit_form') }}" method="post">
+<form action="/submit_form" method="post">
   First name:<br>
   <input type="text" name="Name"><br>
   Email:<br>
