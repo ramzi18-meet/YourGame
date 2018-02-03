@@ -52,7 +52,30 @@ def submit_form():
     db.session.add(save)
     db.session.commit()
     users = sign.query.all() 
-    return render_template('upcoming.html')       
+    return render_template('upcoming.html')
+
+
+
+@app.route('/submit_form', methods=['POST'])
+def concerns():
+    name = request.form['Name']
+    last = request.form['Last Name']
+    country = request.form['Country']
+    subject = request.form['Subject']
+    save = sign(name, last, country, subject)
+    db.session.add(save)
+    db.session.commit()
+    users = sign.query.all() 
+    return render_template('home.html')   
+
+
+
+
+
+
+
+
+           
 
 
 class sign(db.Model):
